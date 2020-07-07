@@ -18,3 +18,16 @@ some_knowledge = avi.teach
 steve.learn(some_knowledge)
 
 puts "Steve just learned this important knowledge: '#{steve.knowledge.first}' from Avi"
+
+# jim = User.new
+# jim.first_name = "Jim"
+# jim.last_name = "Halpert"
+
+# jim.learn(some_knowledge)
+some_more_knowledge = avi.teach
+steve.learn(some_more_knowledge)
+
+all_steve_knowledge = ''
+steve.knowledge.each { |knowledge| all_steve_knowledge += knowledge + "\n" }
+
+puts "Steve learned all this from Avi: \n#{all_steve_knowledge}"
